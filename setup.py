@@ -31,5 +31,6 @@ setuptools.setup(
     long_description_content_type = 'text/markdown',
     install_requires = get_required(),
     python_requires = '>=3.7',
+    entry_points={"console_scripts": ["decode-config=decode-config.main:main"]},
     scripts = ['decode-config.py']
 )
